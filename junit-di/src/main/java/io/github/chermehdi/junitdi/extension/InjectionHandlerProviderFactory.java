@@ -6,6 +6,8 @@ import java.util.ServiceLoader;
 import java.util.logging.Logger;
 
 /**
+ * a factory to create the {@code InjectionHandlerProvider}
+ *
  * @author chermehdi
  */
 public class InjectionHandlerProviderFactory {
@@ -14,6 +16,10 @@ public class InjectionHandlerProviderFactory {
     throw new IllegalStateException("InjectionProviderFactory should not be instantiated");
   }
 
+  /**
+   * Will resolve the Implementation of the {@code InjectionHandlerProvider} at Runtime and return
+   * it, in case none was found it will retun null wich will cause a NullPointer Exception .
+   */
   public static InjectionHandlerProvider getProvider() {
     ServiceLoader<InjectionHandlerProvider> loadedService = ServiceLoader
         .load(InjectionHandlerProvider.class);

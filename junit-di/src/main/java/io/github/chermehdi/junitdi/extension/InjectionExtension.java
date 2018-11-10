@@ -18,10 +18,10 @@ public class InjectionExtension implements ParameterResolver {
   private InjectionHandler handler;
 
   /**
-   * boot the CDI context
+   * create the InjectionHandler
    */
   public InjectionExtension() {
-    InjectionHandlerProvider provider =  InjectionHandlerProviderFactory.getProvider();
+    InjectionHandlerProvider provider = InjectionHandlerProviderFactory.getProvider();
     handler = provider.createHandler();
   }
 
