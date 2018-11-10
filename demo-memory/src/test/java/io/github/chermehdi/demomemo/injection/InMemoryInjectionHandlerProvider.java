@@ -1,4 +1,4 @@
-package io.github.chermehdi.injection;
+package io.github.chermehdi.demomemo.injection;
 
 import io.github.chermehdi.junitdi.api.InjectionHandler;
 import io.github.chermehdi.junitdi.api.InjectionHandlerProvider;
@@ -6,10 +6,10 @@ import io.github.chermehdi.junitdi.api.InjectionHandlerProvider;
 /**
  * @author chermehdi
  */
-public class InjectionProvider implements InjectionHandlerProvider {
+public class InMemoryInjectionHandlerProvider implements InjectionHandlerProvider {
 
   @Override
   public InjectionHandler createHandler() {
-    return new CDIInjectionHandler();
+    return new InMemoryHandler();
   }
 }

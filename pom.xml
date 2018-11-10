@@ -11,6 +11,7 @@
   <modules>
     <module>demo-cdi</module>
     <module>junit-di</module>
+    <module>demo-memory</module>
   </modules>
 
   <properties>

@@ -1,4 +1,4 @@
-package io.github.chermehdi.service;
+package io.github.chermehdi.democdi.service;
 
 /**
  * @author chermehdi

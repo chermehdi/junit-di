@@ -1,4 +1,4 @@
-package io.github.chermehdi.injection;
+package io.github.chermehdi.democdi.injection;
 
 import io.github.chermehdi.junitdi.api.InjectionHandler;
 import javax.enterprise.inject.se.SeContainer;
@@ -15,11 +15,6 @@ public class CDIInjectionHandler implements InjectionHandler {
     container = SeContainerInitializer
         .newInstance()
         .initialize();
-  }
-
-  @Override
-  public <T> T create(Class<T> type) {
-    return container.select(type).get();
   }
 
   @Override

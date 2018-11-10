@@ -9,11 +9,6 @@ package io.github.chermehdi.junitdi.api;
 public interface InjectionHandler {
 
   /**
-   * @param type the type to be resolved, create and return an object of the given type
-   */
-  <T> T create(Class<T> type);
-
-  /**
    * resolves the given object, if it has any dependencies that the container is available to
    * inject, it will otherwise the container should report an exception
    */
