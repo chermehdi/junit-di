@@ -48,6 +48,18 @@ class MyTestClass {
 }
 ``` 
 
+- or you can use :
+```java
+@EnableInjection
+class MyTestClass {
+  
+  @Test
+  void testMethod(SomeService service) {
+    assertNotNull(service);
+  }
+}
+``` 
+ 
 ## Contribution
 
 - Any bug report or feature request or any kind of contribution is highly appreciated 😃   
